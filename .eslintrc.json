@@ -30,7 +30,7 @@
       "windows"
     ],
 	"space-infix-ops": 1,
-	"brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+	"brace-style": ["error", "stroustrup", { "allowSingleLine": true }],
     "quotes": [
       "error",
       "single"
