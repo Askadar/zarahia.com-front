@@ -50,7 +50,6 @@ export const CodeLines = CodeLine.extend`
 	padding: 0;
 	width: 100%;
 	overflow: auto;
-	background: purple;
 `;
 export const CodeInsert = FullWidthPadd.withComponent('code').extend`
 	font-size: 1em;
@@ -65,7 +64,6 @@ const CodeBlockUnstyled = ({ children, className }) =>
 export const CodeBlock = FullWidthPadd.withComponent(CodeBlockUnstyled).extend`
 	font-size: 1em;
 	display: block;
-	background: green;
 `;
 export const List = styled.ul`
 	padding: 0px;
