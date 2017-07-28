@@ -42,6 +42,7 @@ export const ParagraphHeader = FullWidthPadd.withComponent('h4').extend`
 export const Paragraph = FullWidthPadd.withComponent('p').extend`
 	font-size: 1em;
 `;
+export const Figure = ({ url, caption }) => <img style={{ padding: 27 }} src={url} alt={caption + ' with some random text to indicate live component'}/>;
 export const CodeLine = FullWidthPadd.withComponent('code').extend`
 	font-size: 1em;
 	display: block;
@@ -65,6 +66,8 @@ export const CodeBlock = FullWidthPadd.withComponent(CodeBlockUnstyled).extend`
 	font-size: 1em;
 	display: block;
 `;
+export const CodeSample = ({ text }) => <CodeBlock>{text}</CodeBlock>;
+// TODO replace with proper BigCodeSample component
 export const List = styled.ul`
 	padding: 0px;
 `;
